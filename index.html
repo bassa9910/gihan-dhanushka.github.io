@@ -8,178 +8,277 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         html { scroll-behavior: smooth; }
+        .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased">
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
 
-    <nav class="sticky top-0 z-50 bg-white shadow-md">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold text-blue-900 tracking-wide">GIHAN DHANUSHKA</a>
-            <div class="hidden md:flex space-x-6 font-medium">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-black tracking-wider text-blue-900">GIHAN DHANUSHKA</a>
+            <div class="hidden md:flex space-x-8 font-semibold text-sm text-slate-600">
                 <a href="#about" class="hover:text-blue-600 transition">About</a>
                 <a href="#experience" class="hover:text-blue-600 transition">Experience</a>
                 <a href="#education" class="hover:text-blue-600 transition">Education</a>
-                <a href="#skills" class="hover:text-blue-600 transition">Skills & Publications</a>
+                <a href="#certifications" class="hover:text-blue-600 transition">Qualifications</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
                 <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
             </div>
         </div>
     </nav>
 
-    <header class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-20 px-4 text-center">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Gihan Dhanushka</h1>
-            <p class="text-xl md:text-2xl text-blue-200 mb-6 font-light">Senior Executive - Engineering & Facilities Management</p>
-            <p class="text-md text-gray-300 max-w-2xl mx-auto mb-8">
-                B.Sc. (Hons) in Facilities Management graduate specialized in managing critical building infrastructure, MEP systems, and digital twin-enabled building operations.
-            </p>
-            <div class="flex justify-center space-x-4">
-                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded shadow transition">Get In Touch</a>
-                <a href="#experience" class="bg-transparent border border-white hover:bg-white hover:text-blue-900 font-semibold px-6 py-3 rounded transition">View Work</a>
+    <!-- Hero / Profile Section -->
+    <header class="hero-gradient text-white py-24 px-6 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
+            <!-- Left Side: Intro -->
+            <div class="flex-1 text-center md:text-left">
+                <span class="bg-blue-500/20 text-blue-300 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">Senior Facilities Executive</span>
+                <h1 class="text-4xl md:text-6xl font-black tracking-tight mt-3 mb-4">Gihan Dhanushka</h1>
+                <p class="text-xl md:text-2xl text-slate-300 font-light mb-6">Senior Executive – Engineering & Facilities Management at Ninewells Hospital</p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-3 text-sm text-slate-300 mb-8">
+                    <span><i class="fa-solid fa-location-dot text-blue-400 mr-2"></i>Piliyandala, Sri Lanka[cite: 1]</span>
+                    <span><i class="fa-solid fa-graduation-cap text-blue-400 mr-2"></i>B.Sc. (Hons) First Class</span>
+                </div>
+                <div class="flex justify-center md:justify-start gap-4">
+                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-xl transition shadow-lg shadow-blue-900/40">Connect With Me</a>
+                    <a href="#experience" class="bg-slate-800/80 hover:bg-slate-800 text-slate-200 border border-slate-700 font-bold px-6 py-3 rounded-xl transition">View Timeline</a>
+                </div>
+            </div>
+            
+            <!-- Right Side: User Photo Frame -->
+            <div class="flex-shrink-0 relative">
+                <div class="absolute inset-0 bg-blue-500 rounded-3xl rotate-6 opacity-20 blur-sm"></div>
+                <!-- REPLACE THE URL BELOW WITH YOUR ACTUAL IMAGE URL -->
+                <img src="https://via.placeholder.com/300" alt="Gihan Dhanushka" class="w-64 h-64 md:w-72 md:h-72 object-cover rounded-3xl border-4 border-slate-800 shadow-2xl relative z-10 bg-slate-700">
             </div>
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto px-4 py-12 space-y-20">
+    <main class="max-w-6xl mx-auto px-6 py-16 space-y-24">
 
-        <section id="about" class="scroll-mt-20">
-            <h2 class="text-3xl font-bold text-blue-900 mb-6 border-b-2 border-blue-100 pb-2"><i class="fa-solid fa-user mr-3"></i>About Me</h2>
-            <p class="text-lg leading-relaxed text-gray-600">
-                An energetic, self-motivated, and dedicated professional holding a First-Class Honours degree from the University of Moratuwa. Proven ability to work efficiently under pressure to optimize organizational performance using academic principles and practical expertise. Passionate about leveraging the latest technological solutions—such as Building Information Modeling (BIM) and Central Asset Management Systems—to streamline modern facilities operations.
-            </p>
+        <!-- About Section -->
+        <section id="about" class="scroll-mt-24">
+            <div class="grid md:grid-cols-3 gap-8 items-start">
+                <div class="md:col-span-1">
+                    <h2 class="text-3xl font-black tracking-tight text-slate-900 uppercase">About Me</h2>
+                    <div class="w-12 h-1 bg-blue-600 mt-2"></div>
+                </div>
+                <div class="md:col-span-2 space-y-4 text-slate-600 text-lg leading-relaxed">
+                    <p>
+                        Energetic, self-motivated, and dedicated individual who followed the B.Sc. (Hons) in Facilities Management degree program at the University of Moratuwa[cite: 1]. Highly capable of working under intense pressure and strict deadlines to make a significant contribution to organizational infrastructure health[cite: 1]. 
+                    </p>
+                    <p>
+                        Expertise bridges hard engineering systems (MEP, HVAC, automation) and soft services workflows using cutting-edge technical applications like Building Information Modeling (BIM) and digital twin frameworks[cite: 1].
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 pt-4 text-sm border-t border-slate-200">
+                        <div><strong class="text-slate-900">Civil Status:</strong> Married</div>
+                        <div><strong class="text-slate-900">Languages:</strong> Sinhala, English</div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="experience" class="scroll-mt-20">
-            <h2 class="text-3xl font-bold text-blue-900 mb-8 border-b-2 border-blue-100 pb-2"><i class="fa-solid fa-briefcase mr-3"></i>Work Experience</h2>
+        <!-- Work Experience Section -->
+        <section id="experience" class="scroll-mt-24">
+            <div class="mb-12">
+                <h2 class="text-3xl font-black tracking-tight text-slate-900 uppercase">Work Experience</h2>
+                <div class="w-12 h-1 bg-blue-600 mt-2"></div>
+            </div>
             
-            <div class="space-y-8 relative border-l-2 border-blue-200 pl-6 ml-4">
+            <div class="space-y-12 relative border-l-2 border-slate-200 pl-6 ml-4">
                 
+                <!-- Role 1 -->
                 <div class="relative">
-                    <div class="absolute -left-[31px] top-1 bg-blue-600 rounded-full h-4 w-4 border-4 border-white"></div>
-                    <div class="flex flex-col md:flex-row md:justify-between mb-2">
-                        <h3 class="text-xl font-bold text-gray-900">Senior Executive - Engineering & Facilities Management</h3>
-                        <span class="text-sm font-semibold bg-blue-100 text-blue-800 px-3 py-1 rounded-full h-fit w-fit mt-1 md:mt-0">Dec 2024 - Present</span>
-                    </div>
-                    <p class="text-md font-semibold text-blue-700 mb-3">Ninewells Hospital (Pvt) Ltd (Member of Access Group)</p>
-                    <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
-                        <li>Oversee hospital engineering, critical infrastructure (HVAC, Elevators, Generators, Medical Gas), and soft operations.</li>
-                        <li>Manage preventive, corrective, and predictive maintenance protocols for comprehensive MEP systems.</li>
-                        <li>Drive energy efficiency initiatives, monitor utilities, and handle annual maintenance contracts/vendor negotiations.</li>
-                        <li>Supervise healthcare-compliant workflows including housekeeping, laundry, and infection control.</li>
+                    <div class="absolute -left-[31px] top-1.5 bg-blue-600 rounded-full h-4 w-4 border-4 border-white shadow-md"></div>
+                    <span class="text-xs font-bold text-blue-600 tracking-wider uppercase">Dec 2024 - Present</span>
+                    <h3 class="text-xl font-bold text-slate-950 mt-1">Senior Executive - Engineering & Facilities Management</h3>
+                    <p class="text-md font-semibold text-slate-500 mb-3">Ninewells Hospital (Pvt) Ltd [Member of Access group of companies]</p>
+                    <ul class="list-disc list-inside text-slate-600 text-sm space-y-2 max-w-4xl">
+                        <li>Oversee all engineering, maintenance tasks, and infrastructure operations (HVAC, Elevators, Generators, Medical Gas).</li>
+                        <li>Manage preventive, corrective, and predictive maintenance protocols for complex MEP systems.</li>
+                        <li>Handle engineering budgets, procurement procedures, and high-level vendor/contractor negotiations.</li>
+                        <li>Direct comprehensive soft healthcare service lines including hospitality housekeeping, automated laundry, and external grounds landscaping.</li>
                     </ul>
                 </div>
 
+                <!-- Role 2 -->
                 <div class="relative">
-                    <div class="absolute -left-[31px] top-1 bg-gray-400 rounded-full h-4 w-4 border-4 border-white"></div>
-                    <div class="flex flex-col md:flex-row md:justify-between mb-2">
-                        <h3 class="text-xl font-bold text-gray-900">Executive - Facilities Management</h3>
-                        <span class="text-sm font-semibold bg-gray-100 text-gray-700 px-3 py-1 rounded-full h-fit w-fit mt-1 md:mt-0">Jun 2024 - Dec 2024</span>
-                    </div>
-                    <p class="text-md font-semibold text-blue-700 mb-3">Realty Management Services (Pvt) Ltd, Colombo 01</p>
-                    <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
-                        <li>Created and executed Standard Operating Procedures (SOPs) across managed facilities.</li>
-                        <li>Conducted comprehensive compliance audits and coordinated with government regulatory bodies.</li>
-                        <li>Managed core soft services including Housekeeping, Pest Control, and multi-tier Security.</li>
+                    <div class="absolute -left-[31px] top-1.5 bg-slate-300 rounded-full h-4 w-4 border-4 border-white"></div>
+                    <span class="text-xs font-bold text-slate-500 tracking-wider uppercase">Jun 2024 - Dec 2024</span>
+                    <h3 class="text-xl font-bold text-slate-950 mt-1">Executive - Facilities Management</h3>
+                    <p class="text-md font-semibold text-slate-500 mb-3">Realty Management Services (Pvt) Ltd. Colombo 01</p>
+                    <ul class="list-disc list-inside text-slate-600 text-sm space-y-1">
+                        <li>Authored and implemented operational Standard Operating Procedures (SOPs) across multi-tenant sites.</li>
+                        <li>Executed performance and compliance audits in synchronization with government regulatory standards.</li>
+                        <li>Supervised soft facilities administration tracks consisting of housekeeping layouts, pest control, and asset safety.</li>
                     </ul>
                 </div>
 
+                <!-- Role 3 -->
                 <div class="relative">
-                    <div class="absolute -left-[31px] top-1 bg-gray-400 rounded-full h-4 w-4 border-4 border-white"></div>
-                    <div class="flex flex-col md:flex-row md:justify-between mb-2">
-                        <h3 class="text-xl font-bold text-gray-900">Trainee Maintenance Manager</h3>
-                        <span class="text-sm font-semibold bg-gray-100 text-gray-700 px-3 py-1 rounded-full h-fit w-fit mt-1 md:mt-0">Sep 2022 - Jan 2023</span>
-                    </div>
-                    <p class="text-md font-semibold text-blue-700 mb-3">Property Development Ltd, Colombo 01</p>
-                    <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm">
-                        <li>Monitored building mechanical, electrical, and ventilation networks while enforcing worker safety.</li>
-                        <li>Maintained daily inspection checklists and actively engaged in fire detection system testing and commissioning.</li>
+                    <div class="absolute -left-[31px] top-1.5 bg-slate-300 rounded-full h-4 w-4 border-4 border-white"></div>
+                    <span class="text-xs font-bold text-slate-500 tracking-wider uppercase">Sep 2022 - Jan 2023</span>
+                    <h3 class="text-xl font-bold text-slate-950 mt-1">Trainee Maintenance Manager</h3>
+                    <p class="text-md font-semibold text-slate-500 mb-3">Property Development Ltd. Colombo 01</p>
+                    <ul class="list-disc list-inside text-slate-600 text-sm space-y-1">
+                        <li>Monitored automated building Mechanical, Electrical, and Ventilation frameworks.</li>
+                        <li>Coordinated scheduled maintenance checklists, fire system commissionings, and strict occupational safety compliance.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 4 -->
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1.5 bg-slate-300 rounded-full h-4 w-4 border-4 border-white"></div>
+                    <span class="text-xs font-bold text-slate-500 tracking-wider uppercase">Jun 2022 - Sep 2022</span>
+                    <h3 class="text-xl font-bold text-slate-950 mt-1">Trainee Facilities Executive</h3>
+                    <p class="text-md font-semibold text-slate-500 mb-3">Realty Management Services (Pvt) Ltd.</p>
+                    <ul class="list-disc list-inside text-slate-600 text-sm space-y-1">
+                        <li>Managed external provider service agreements and engineered solutions for tenant architectural/civil complaints.</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section id="education" class="scroll-mt-20">
-            <h2 class="text-3xl font-bold text-blue-900 mb-6 border-b-2 border-blue-100 pb-2"><i class="fa-solid fa-graduation-cap mr-3"></i>Education</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                    <span class="text-xs font-bold text-blue-600 uppercase tracking-widest">Graduated • Jan 2020 - Jun 2024</span>
-                    <h3 class="text-lg font-bold text-gray-900 mt-1">B.Sc (Hons) in Facilities Management</h3>
-                    <p class="text-sm text-gray-600 mb-3">University of Moratuwa</p>
-                    <p class="text-md font-semibold text-emerald-600 mb-2">First Class Honors (3.89/4.00 GPA)</p>
-                    <ul class="text-xs text-gray-500 space-y-1 list-disc list-inside">
-                        <li>Accredited by RICS and IFMA</li>
-                        <li>Featured on Dean's List for 7 semesters</li>
-                        <li>Dissertation completed with 'Outstanding Pass (A+)'</li>
-                    </ul>
+        <!-- Education Section -->
+        <section id="education" class="scroll-mt-24">
+            <div class="mb-12">
+                <h2 class="text-3xl font-black tracking-tight text-slate-900 uppercase">Academic Background</h2>
+                <div class="w-12 h-1 bg-blue-600 mt-2"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <span class="bg-emerald-50 text-emerald-700 text-xs font-bold px-3 py-1 rounded-md">First Class (3.89 GPA)</span>
+                            <span class="text-sm text-slate-400 font-medium">2020 - 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mt-4">B.Sc (Hons) in Facilities Management</h3>
+                        <p class="text-md text-blue-800 font-semibold mb-4">University of Moratuwa</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Accredited by RICS and IFMA. Dean's List placement across 7 semesters. Earned an Outstanding Pass (A+) for the final-year research dissertation.
+                        </p>
+                    </div>
+                    <span class="text-xs text-slate-400 block border-t pt-4">Core Focus: Building Services Engineering, BMS, Risk & Asset Lifecycle Management</span>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                    <span class="text-xs font-bold text-indigo-600 uppercase tracking-widest">Ongoing • Oct 2023 - Oct 2026</span>
-                    <h3 class="text-lg font-bold text-gray-900 mt-1">Bachelor of Information Technology</h3>
-                    <p class="text-sm text-gray-600 mb-3">University of Colombo School of Computing</p>
-                    <p class="text-sm text-gray-600">Developing dual expertise in facilities software infrastructure.</p>
-                    <span class="inline-block mt-3 text-xs bg-indigo-50 text-indigo-700 px-2 py-1 rounded font-medium">Core: Java, Programming, Software Engineering basics</span>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <span class="bg-indigo-50 text-indigo-700 text-xs font-bold px-3 py-1 rounded-md">Undergraduate Degree</span>
+                            <span class="text-sm text-slate-400 font-medium">2023 - 2026</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mt-4">Bachelor of Information Technology</h3>
+                        <p class="text-md text-blue-800 font-semibold mb-4">University of Colombo School of Computing</p>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Acquiring technical software capabilities to integrate modern computing tools into building management frameworks[cite: 1].
+                        </p>
+                    </div>
+                    <span class="text-xs text-slate-400 block border-t pt-4">Core Focus: Java Programming, Systems Analysis, Software Engineering Basics</span>
                 </div>
             </div>
         </section>
 
-        <section id="skills" class="scroll-mt-20 grid md:grid-cols-2 gap-12">
-            <div>
-                <h2 class="text-2xl font-bold text-blue-900 mb-6 border-b-2 border-blue-100 pb-2"><i class="fa-solid fa-bolt mr-3"></i>Core Expertise & Digital Skills</h2>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    <span class="bg-gray-200 text-gray-800 text-xs px-3 py-1.5 rounded-full font-medium">MEP Infrastructure</span>
-                    <span class="bg-gray-200 text-gray-800 text-xs px-3 py-1.5 rounded-full font-medium">HVAC & Energy Management</span>
-                    <span class="bg-gray-200 text-gray-800 text-xs px-3 py-1.5 rounded-full font-medium">AutoCAD & Revit (BIM)</span>
-                    <span class="bg-gray-200 text-gray-800 text-xs px-3 py-1.5 rounded-full font-medium">ISO 45001 OHSMS</span>
-                    <span class="bg-gray-200 text-gray-800 text-xs px-3 py-1.5 rounded-full font-medium">Six Sigma Yellow Belt</span>
-                    <span class="bg-gray-200 text-gray-800 text-xs px-3 py-1.5 rounded-full font-medium">Project Management</span>
+        <!-- Professional Certifications Section -->
+        <section id="certifications" class="scroll-mt-24 bg-slate-900 text-white p-8 md:p-12 rounded-3xl shadow-xl">
+            <div class="mb-8">
+                <h2 class="text-2xl font-black uppercase tracking-wide text-blue-400">Professional Credentials</h2>
+                <p class="text-slate-400 text-sm">Specialized technical training records & credentials</p>
+            </div>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 text-sm">
+                <div class="p-4 bg-slate-800/50 rounded-xl border border-slate-700">
+                    <i class="fa-solid fa-fire-extinguisher text-xl text-red-400 mb-2"></i>
+                    <h4 class="font-bold text-slate-200">Firefighting & Rescue Course</h4>
+                    <p class="text-xs text-slate-400">Fire & Rescue Academy</p>
                 </div>
-                <h3 class="text-lg font-semibold text-gray-800 mb-3">Certifications</h3>
-                <ul class="space-y-1.5 text-sm text-gray-600">
-                    <li><i class="fa-solid fa-certificate text-blue-600 mr-2"></i>Firefighting and Rescue (Fire & Rescue Academy)</li>
-                    <li><i class="fa-solid fa-certificate text-blue-600 mr-2"></i>Internal Auditor - ISO 45001:2018 (EFC)</li>
-                    <li><i class="fa-solid fa-certificate text-blue-600 mr-2"></i>Building Information Modeling for FM (ArchiTechCAD)</li>
-                </ul>
+                <div class="p-4 bg-slate-800/50 rounded-xl border border-slate-700">
+                    <i class="fa-solid fa-list-check text-xl text-yellow-400 mb-2"></i>
+                    <h4 class="font-bold text-slate-200">ISO 45001:2018 Internal Auditor</h4>
+                    <p class="text-xs text-slate-400">Occupational Health & Safety (EFC)</p>
+                </div>
+                <div class="p-4 bg-slate-800/50 rounded-xl border border-slate-700">
+                    <i class="fa-solid fa-cubes text-xl text-blue-400 mb-2"></i>
+                    <h4 class="font-bold text-slate-200">BIM for Facilities Management</h4>
+                    <p class="text-xs text-slate-400">ArchiTechCAD | 2024</p>
+                </div>
+                <div class="p-4 bg-slate-800/50 rounded-xl border border-slate-700">
+                    <i class="fa-solid fa-diagram-project text-xl text-purple-400 mb-2"></i>
+                    <h4 class="font-bold text-slate-200">Project Management Foundations</h4>
+                    <p class="text-xs text-slate-400">University of Moratuwa</p>
+                </div>
+                <div class="p-4 bg-slate-800/50 rounded-xl border border-slate-700">
+                    <i class="fa-solid fa-award text-xl text-emerald-400 mb-2"></i>
+                    <h4 class="font-bold text-slate-200">Six Sigma Yellow Belt</h4>
+                    <p class="text-xs text-slate-400">Certified Exam Course | 2024</p>
+                </div>
+                <div class="p-4 bg-slate-800/50 rounded-xl border border-slate-700">
+                    <i class="fa-solid fa-bolt text-xl text-amber-400 mb-2"></i>
+                    <h4 class="font-bold text-slate-200">ACMV, HVAC & Plumbing Setup</h4>
+                    <p class="text-xs text-slate-400">Magnus Academy | 16-hr CPD</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Grid: Skills & Publications -->
+        <div id="skills" class="grid md:grid-cols-3 gap-12 scroll-mt-24">
+            <!-- Skills block -->
+            <div class="md:col-span-2 space-y-6">
+                <h3 class="text-2xl font-bold text-slate-900 uppercase">Core Competencies</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-white border border-slate-200 px-4 py-2 rounded-xl text-sm font-semibold shadow-sm">Building Automation Systems (BMS)</span>
+                    <span class="bg-white border border-slate-200 px-4 py-2 rounded-xl text-sm font-semibold shadow-sm">MEP Infrastructure Operations</span>
+                    <span class="bg-white border border-slate-200 px-4 py-2 rounded-xl text-sm font-semibold shadow-sm">Energy Management Audits</span>
+                    <span class="bg-white border border-slate-200 px-4 py-2 rounded-xl text-sm font-semibold shadow-sm">AutoCAD & Revit Designing</span>
+                    <span class="bg-white border border-slate-200 px-4 py-2 rounded-xl text-sm font-semibold shadow-sm">Procurement & Asset Allocation</span>
+                    <span class="bg-white border border-slate-200 px-4 py-2 rounded-xl text-sm font-semibold shadow-sm">Strategic Operations Planning</span>
+                </div>
             </div>
 
-            <div>
-                <h2 class="text-2xl font-bold text-blue-900 mb-6 border-b-2 border-blue-100 pb-2"><i class="fa-solid fa-book mr-3"></i>Research & Publications</h2>
-                <div class="bg-blue-50 p-5 rounded-lg border border-blue-100">
-                    <span class="bg-blue-600 text-white text-[10px] uppercase px-2 py-0.5 rounded font-bold">Conference Publication</span>
-                    <h3 class="text-md font-bold text-gray-900 mt-2 mb-1">Assessing the readiness to adopt the digital twin enabled facilities management to revamp building operations in Sri Lanka</h3>
-                    <p class="text-xs text-gray-500 mb-3">Basnagala B.G.G.D and De Silva N (2025) | ICFMF 2025</p>
-                    <a href="https://doi.org/10.31705/ICFMF2025.4" target="_blank" class="text-sm font-semibold text-blue-700 hover:underline inline-flex items-center">
-                        View Publication <i class="fa-solid fa-arrow-up-right-from-square ml-1.5 text-xs"></i>
+            <!-- Publications Card -->
+            <div class="md:col-span-1 bg-blue-50 p-6 rounded-2xl border border-blue-100 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-lg font-bold text-blue-950 mb-3"><i class="fa-solid fa-feather-pointed mr-2 text-blue-600"></i>Research & Papers</h3>
+                    <p class="text-xs font-bold text-blue-600 tracking-wider uppercase mb-1">Conference Publication (2025)</p>
+                    <h4 class="text-sm font-bold text-slate-900 leading-snug">"Assessing the readiness to adopt the digital twin enabled facilities management to revamp the building operation and maintenance in Sri Lanka"</h4>
+                    <p class="text-[11px] text-slate-500 mt-2">ICFMF 2025: Safety Enabled & Sustainable Facilities</p>
+                </div>
+                <a href="https://doi.org/10.31705/ICFMF2025.4" target="_blank" class="mt-4 inline-flex items-center text-xs font-bold text-blue-700 hover:text-blue-900">
+                    Access Link <i class="fa-solid fa-external-link ml-1"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section id="contact" class="scroll-mt-24 border-t border-slate-200 pt-16">
+            <div class="bg-slate-950 text-white rounded-3xl p-8 md:p-12 text-center max-w-4xl mx-auto">
+                <h2 class="text-3xl font-black mb-2">Let's Establish Communication</h2>
+                <p class="text-slate-400 text-sm max-w-md mx-auto mb-8">Available for infrastructure management advisory or technical leadership roles.</p>
+                
+                <div class="grid sm:grid-cols-3 gap-4 text-left">
+                    <a href="mailto:gihandanub@gmail.com" class="p-4 bg-slate-900 rounded-2xl hover:bg-slate-800 transition border border-slate-800 block">
+                        <i class="fa-solid fa-envelope text-blue-400 text-lg mb-2"></i>
+                        <p class="text-xs text-slate-500 font-bold uppercase">Write Email</p>
+                        <p class="text-sm font-medium truncate text-slate-200">gihandanub@gmail.com</p>
+                    </a>
+                    <a href="https://wa.me/94715797779" target="_blank" class="p-4 bg-slate-900 rounded-2xl hover:bg-slate-800 transition border border-slate-800 block">
+                        <i class="fa-brands fa-whatsapp text-emerald-400 text-lg mb-2"></i>
+                        <p class="text-xs text-slate-500 font-bold uppercase">Direct Mobile</p>
+                        <p class="text-sm font-medium text-slate-200">+94 71 579 7779</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gihan-dhanushka-446364203" target="_blank" class="p-4 bg-slate-900 rounded-2xl hover:bg-slate-800 transition border border-slate-800 block">
+                        <i class="fa-brands fa-linkedin text-blue-400 text-lg mb-2"></i>
+                        <p class="text-xs text-slate-500 font-bold uppercase">LinkedIn Profile</p>
+                        <p class="text-sm font-medium truncate text-slate-200">gihan-dhanushka</p>
                     </a>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="scroll-mt-20 text-center bg-gray-900 text-white p-10 rounded-2xl">
-            <h2 class="text-3xl font-bold mb-4">Let's Connect</h2>
-            <p class="text-gray-400 max-w-xl mx-auto mb-8">Reach out if you are interested in modern building service engineering, automation, or facilities administration operations.</p>
-            
-            <div class="grid sm:grid-cols-3 gap-6 text-center max-w-3xl mx-auto">
-                <a href="mailto:gihandanub@gmail.com" class="p-4 bg-gray-800 rounded-xl hover:bg-gray-700 transition">
-                    <i class="fa-solid fa-envelope text-2xl text-blue-400 mb-2"></i>
-                    <p class="text-xs text-gray-400">Email</p>
-                    <p class="text-sm font-medium truncate">gihandanub@gmail.com</p>
-                </a>
-                <a href="https://wa.me/94715797779" target="_blank" class="p-4 bg-gray-800 rounded-xl hover:bg-gray-700 transition">
-                    <i class="fa-brands fa-whatsapp text-2xl text-green-400 mb-2"></i>
-                    <p class="text-xs text-gray-400">WhatsApp / Phone</p>
-                    <p class="text-sm font-medium">+94 71 579 7779</p>
-                </a>
-                <a href="https://www.linkedin.com/in/gihan-dhanushka-446364203" target="_blank" class="p-4 bg-gray-800 rounded-xl hover:bg-gray-700 transition">
-                    <i class="fa-brands fa-linkedin text-2xl text-blue-500 mb-2"></i>
-                    <p class="text-xs text-gray-400">LinkedIn</p>
-                    <p class="text-sm font-medium">Gihan Dhanushka</p>
-                </a>
-            </div>
-        </section>
-
     </main>
 
-    <footer class="bg-gray-950 text-gray-500 text-center py-6 text-xs">
-        <p>&copy; 2026 Gihan Dhanushka. Built with Tailwind CSS.</p>
+    <footer class="bg-slate-900 text-slate-500 py-8 text-center text-xs border-t border-slate-800">
+        <p>&copy; 2026 Gihan Dhanushka. Created with modern web practices.</p>
     </footer>
 
 </body>
